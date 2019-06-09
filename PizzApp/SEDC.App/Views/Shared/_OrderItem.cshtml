@@ -1,0 +1,22 @@
+﻿@model Order
+<h3>Order no. @Model.Id</h3>
+<p>Name: @Model.User.FirstName @Model.User.LastName</p>
+<p>Pizza: @Model.Pizza.Name - @Model.Pizza.Size</p>
+<p>Price: @Model.Price</p>
+
+@if (Model.Pizza.Name == "Kapri")
+{
+    <img src="~/images/kapri.jpg" alt="Alternate Text" width="180" height="120" />
+}
+@if (Model.Pizza.Name == "Peperoni")
+{
+    <img src="~/images/peperoni.jpg" alt="Alternate Text" width="180" height="120" />
+}
+@if (Model.Pizza.Name == "Vegan")
+{
+    <img src="~/images/vegan.jpg" alt="Alternate Text" width="180" height="120" />
+}
+@if (Model.Pizza.Name == "Macedonian")
+{
+    <img src="~/images/macedonian.jpg" alt="Alternate Text" width="180" height="120" />
+}
