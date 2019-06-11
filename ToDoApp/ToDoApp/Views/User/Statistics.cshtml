@@ -1,0 +1,14 @@
+﻿@model User
+@{
+    ViewData["Title"] = "User - Stats";
+}
+
+<title>@ViewData["Title"]</title>
+
+<h1>@ViewData["Message"]</h1>
+
+<ul>
+    <li>Name: @Model.FirstName @Model.LastName</li>
+    <li>Age: @Model.Age</li>
+    <li>Average Free Time: @Model.AverageFreeTime</li>
+</ul>

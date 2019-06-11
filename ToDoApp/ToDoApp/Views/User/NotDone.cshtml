@@ -1,0 +1,14 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Tasks not done";
+}
+
+<title>@ViewData["Title"]</title>
+
+<h1>@ViewData["Message"]</h1>
+
+<p>Tasks NOT DONE by @Model.FirstName @Model.LastName</p>
+
+<ul>
+    <li>Task: @Model.ToDoTasks</li>
+</ul>
