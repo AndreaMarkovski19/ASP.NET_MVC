@@ -7,10 +7,11 @@ namespace ToDoApp.Models.DomainModels
 {
     public class User
     {
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
         public double AverageFreeTime { get; set; }
-        public List<Tasks> ToDoTasks { get; set; }
+        public List<Tasks> ToDoTasks { get; set; } = new List<Tasks>();
     }
 }

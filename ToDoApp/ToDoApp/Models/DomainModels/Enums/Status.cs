@@ -7,8 +7,8 @@ namespace ToDoApp.Models.DomainModels.Enums
 {
     public enum Status
     {
-        Done,
-        NotDone,
-        InProgress        
-    } 
+        NotDone = 1,
+        InProgress = 2,
+        Done = 3
+    }
 }

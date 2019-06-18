@@ -8,7 +8,7 @@ namespace ToDoApp.Models.DomainModels
     public enum Priority
     {
         Important = 1,
-        MediumImportant = 2,
+        Medium = 2,
         NotImportant = 3
-    } 
+    }
 }

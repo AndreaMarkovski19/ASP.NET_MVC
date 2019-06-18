@@ -1,0 +1,10 @@
+﻿@model DoneTasksViewModel
+@{
+    ViewBag.Title = "Tasks done";
+}
+
+<ul>
+    <li>Task: @Model.Done</li>
+</ul>
+
+<button>@Html.ActionLink("Add Task", "AddTask", "Task")</button>

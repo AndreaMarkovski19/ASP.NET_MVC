@@ -1,0 +1,10 @@
+﻿@model InProgressTasksViewModel
+@{
+    ViewBag.Title = "InProgress Tasks";
+}
+
+<ul>
+    <li>Task: @Model.InProgress</li>
+</ul>
+
+<button>@Html.ActionLink("Add Task", "AddTask", "Task")</button>

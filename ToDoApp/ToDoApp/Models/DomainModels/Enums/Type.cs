@@ -7,8 +7,8 @@ namespace ToDoApp.Models.DomainModels.Enums
 {
     public enum Type
     {
-        Work,
-        Personal,
-        Hobby
+        Work = 1,
+        Personal = 2,
+        Hobby = 3
     }
 }

@@ -44,7 +44,7 @@ namespace ToDoApp
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Task/Error");
                 app.UseHsts();
             }
 
@@ -56,7 +56,7 @@ namespace ToDoApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=User}/{action=NotDone}/{id?}");
+                    template: "{controller=Task}/{action=NotDone}/{id?}");
             });
         }
     }
