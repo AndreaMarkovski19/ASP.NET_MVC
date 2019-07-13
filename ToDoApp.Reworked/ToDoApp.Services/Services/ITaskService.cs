@@ -10,11 +10,14 @@ namespace ToDoApp.Services.Services
     public interface ITaskService
     {
         List<Task> GetAllTasks();
-        Task GetTaskById(int id);
-        int GetTaskCount();
-        void CreateNewTask(Task task);
         List<SubTask> GetAllSubTasks();
+
+        Task GetTaskById(int id);
         SubTask GetSubTaskById(int id);
+
+        void CreateNewTask(Task task);        
         void CreateNewSubTask(SubTask subTask);
+
+        void UpdateTask(Task task);
     }
 }

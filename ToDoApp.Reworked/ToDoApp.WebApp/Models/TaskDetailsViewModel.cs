@@ -10,7 +10,8 @@ namespace ToDoApp.WebApp.Models
 {
     public class TaskDetailsViewModel
     {
-        public int Id { get; set; }        
+        public int Id { get; set; }
+        public int UserId { get; set; }
         [Display(Name = "Title of the Task")]
         public string Title { get; set; }
         [Display(Name = "Description of the Task")]

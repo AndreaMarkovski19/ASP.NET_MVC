@@ -32,7 +32,8 @@ C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\bin\Debug\netcoreapp2
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ThankYou.g.cshtml.cs
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\InProgress.g.cshtml.cs
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\Done.g.cshtml.cs
-C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\Statistics.g.cshtml.cs
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\AddTask.g.cshtml.cs
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\TaskDetails.g.cshtml.cs
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\NotDone.g.cshtml.cs
+C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Task\GetAllTasks.g.cshtml.cs

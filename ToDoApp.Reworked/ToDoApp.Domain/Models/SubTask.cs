@@ -7,10 +7,9 @@ namespace ToDoApp.Domain.Models
 {
     public class SubTask
     {
-        public int Id { get; set; }
-        public int TaskId { get; set; }
+        public int Id { get; set; }         
         public string Title { get; set; }
         public string Description { get; set; }
-        public Status Status { get; set; }
+        public SubStatus SubStatus { get; set; }
     }
 }

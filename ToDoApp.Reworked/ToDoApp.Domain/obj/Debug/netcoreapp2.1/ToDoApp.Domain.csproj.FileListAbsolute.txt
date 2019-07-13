@@ -6,3 +6,4 @@ C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.AssemblyInfo.cs
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.dll
 C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.csprojAssemblyReference.cache

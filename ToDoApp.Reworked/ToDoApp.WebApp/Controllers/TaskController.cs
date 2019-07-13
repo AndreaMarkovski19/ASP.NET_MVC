@@ -26,7 +26,7 @@ namespace ToDoApp.WebApp.Controllers
 
         public IActionResult NotDone()
         {
-            List<Task> allTasks = _userService.GetUserById(1).ToDoTasks
+            List<Task> allTasks = _taskService.GetAllTasks()
                 .Where(t => t.Status == Status.NotDone)
                 .ToList();
             List<TaskViewModel> notDone = new List<TaskViewModel>();
@@ -64,7 +64,6 @@ namespace ToDoApp.WebApp.Controllers
                     Type = task.Type,
                 };
                 inProgress.Add(taskForList);
-
             }
 
             InProgressTasksViewModel model = new InProgressTasksViewModel() { InProgress = inProgress };
@@ -94,9 +93,26 @@ namespace ToDoApp.WebApp.Controllers
             return View(model);
         }
 
-        public IActionResult Statistics()
+        public IActionResult GetAllTasks()
         {
-            return View();
+            List<Task> allTasks = _taskService.GetAllTasks()
+               .ToList();
+            List<TaskViewModel> all = new List<TaskViewModel>();
+            foreach (var task in allTasks)
+            {
+                TaskViewModel allTasksForList = new TaskViewModel
+                {
+                    Title = task.Title,
+                    Description = task.Description,
+                    Priority = task.Priority,
+                    Status = task.Status,
+                    Type = task.Type,
+                };
+                all.Add(allTasksForList);
+            }
+
+            AllTasksViewModel model = new AllTasksViewModel() { AllTasks = all };
+            return View(model);
         }
 
         [HttpGet("Task")]
@@ -119,39 +135,22 @@ namespace ToDoApp.WebApp.Controllers
             };
 
             _taskService.CreateNewTask(task);
+
             return View("_ThankYou");
         }
 
-        [HttpGet]
+        //[HttpGet("Task")]
         public IActionResult TaskDetails(int id)
         {
-            Task task = _taskService.GetTaskById(id);
-            if (task == null) return RedirectToAction("TaskDetails");
 
-            TaskDetailsViewModel taskDetail = new TaskDetailsViewModel()
-            {            
-                Id = task.Id,
-                Title = task.Title,
-                Description = task.Description,
-                Priority = task.Priority,
-                Status = task.Status,                
-            };
-
-            return View(taskDetail);            
+            return View();
         }
 
-        [HttpPost]
+        //[HttpPost("Task")]
         public IActionResult TaskDetails(TaskDetailsViewModel model)
         {
-            Task task = _taskService.GetAllTasks().SingleOrDefault(t => t.Id == model.Id);
-            task.Title = model.Title;
-            task.Description = model.Description;
-            task.Priority = model.Priority;
-            task.Status = model.Status;
-            task.Type = model.Type;            
 
-            _taskService.CreateNewTask(task);
-            return View("_ThankYou");
+            return View();
         }
     }
 }

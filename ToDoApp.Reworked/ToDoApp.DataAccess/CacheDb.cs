@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using ToDoApp.Domain.Enums;
 using ToDoApp.Domain.Models;
 using Task = ToDoApp.Domain.Models.Task;
 using Type = ToDoApp.Domain.Enums.Type;
-using ToDoApp.Domain;
 
 
 namespace ToDoApp.DataAccess
 {
     public static class CacheDb
     {
-        public static List<User> Users = new List<User>(); 
+        public static List<User> Users = new List<User>();
         public static List<Task> Tasks = new List<Task>();
         public static List<SubTask> SubTasks = new List<SubTask>();
         public static int UserId;
@@ -22,151 +18,173 @@ namespace ToDoApp.DataAccess
 
         static CacheDb()
         {
-            Users = new List<User>()
+
+            User andrea = new User()
             {
-                new User()
-                {
-                    Id = 1,
-                    FirstName = "Andrea",
-                    LastName = "Markovski",
-                    Age = 35,
-                    AverageFreeTime = 10,
-                    ToDoTasks = new List<Domain.Models.Task>()
-                    {
-                        Tasks[0], Tasks[1], Tasks[2], Tasks[3], Tasks[4],
-                        Tasks[5], Tasks[6], Tasks[7], Tasks[8]
-                    }
-                },
+                Id = 1,
+                FirstName = "Andrea",
+                LastName = "Markovski",
+                Age = 35,
+                AverageFreeTime = 10,                
             };
 
-            Tasks = new List<Task>()
+            Users.Add(andrea);
+
+            Task task_01 = new Task()
             {
-                new Task()
-                {
-                    Id = 1,
-                    Title = "Homework01",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.NotDone,
-                    Type = Type.Work,
-                    SubTasks = new List<SubTask>()
-                    {
-                        SubTasks[0], SubTasks[1]
-                    }
-                },
-                new Task()
-                {
-                    Id = 2,
-                    Title = "Homework02",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.NotDone,
-                    Type = Type.Work,
-                    SubTasks = new List<SubTask>()
-                    {
-                        SubTasks[2], SubTasks[3]
-                    }
-                },
-                new Task()
-                {
-                    Id = 3,
-                    Title = "Homework03",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.NotDone,
-                    Type = Type.Work
-                },
-                new Task()
-                {
-                    Id = 4,
-                    Title = "Homework04",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.InProgress,
-                    Type = Type.Work
-                },
-                new Task()
-                {
-                    Id = 5,
-                    Title = "Homework05",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.InProgress,
-                    Type = Type.Work
-                },
-                new Task()
-                {
-                    Id = 6,
-                    Title = "Homework06",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.InProgress,
-                    Type = Type.Work
-                },
-                new Task()
-                {
-                    Id = 7,
-                    Title = "Homework07",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.Done,
-                    Type = Type.Work
-                },
-                new Task()
-                {
-                    Id = 8,
-                    Title = "Homework08",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.Done,
-                    Type = Type.Work
-                },
-                new Task()
-                {
-                    Id = 9,
-                    Title = "Homework09",
-                    Description = "MVC",
-                    Priority = Priority.Important,
-                    Status = Status.Done,
-                    Type = Type.Work
-                },
+                Id = 1,
+                Title = "Homework01",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.NotDone,
+                Type = Type.Work,
             };
 
-            SubTasks = new List<SubTask>()
+            SubTask subtask_01 = new SubTask()
             {
-                new SubTask()
-                {
-                    Id = 1,
-                    Title = "Subtask01",
-                    Description = "MVC",
-                    Status = Status.NotDone,
-                },
-                new SubTask()
-                {
-                    Id = 2,
-                    Title = "Subtask02",
-                    Description = "MVC",
-                    Status = Status.Done,
-                },
-                new SubTask()
-                {
-                    Id = 3,
-                    Title = "Subtask03",
-                    Description = "MVC",
-                    Status = Status.NotDone,
-                },
-                new SubTask()
-                {
-                    Id = 4,
-                    Title = "Subtask04",
-                    Description = "MVC",
-                    Status = Status.InProgress,
-                },
+                Id = 1,
+                Title = "Subtask01",
+                Description = "MVC",
+                SubStatus = SubStatus.NotDone,
             };
+
+            SubTask subtask_02 = new SubTask()
+            {
+                Id = 2,
+                Title = "Subtask02",
+                Description = "MVC",
+                SubStatus = SubStatus.Done,
+            };
+
+            SubTasks.Add(subtask_01);
+            SubTasks.Add(subtask_02);
+
+            task_01.SubTasks.Add(subtask_01);
+            task_01.SubTasks.Add(subtask_02);
+
+            Task task_02 = new Task()
+            {
+                Id = 2,
+                Title = "Homework02",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.NotDone,
+                Type = Type.Work,
+            };
+
+            SubTask subtask_03 = new SubTask()
+            {
+                Id = 3,
+                Title = "Subtask03",
+                Description = "MVC",
+                SubStatus = SubStatus.NotDone,
+            };
+
+            SubTask subtask_04 = new SubTask()
+            {
+                Id = 4,
+                Title = "Subtask04",
+                Description = "MVC",
+                SubStatus = SubStatus.Done,
+            };
+
+            SubTasks.Add(subtask_03);
+            SubTasks.Add(subtask_03);
+
+            task_02.SubTasks.Add(subtask_03);
+            task_02.SubTasks.Add(subtask_03);
+
+            Task task_03 = new Task()
+            {
+                Id = 3,
+                Title = "Homework03",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.NotDone,
+                Type = Type.Work
+            };
+
+            SubTask subtask_05 = new SubTask()
+            {
+                Id = 3,
+                Title = "Subtask05",
+                Description = "MVC",
+                SubStatus = SubStatus.NotDone,
+            };
+
+            SubTask subtask_06 = new SubTask()
+            {
+                Id = 4,
+                Title = "Subtask06",
+                Description = "MVC",
+                SubStatus = SubStatus.Done,
+            };
+
+            Task task_04 = new Task()
+            {
+                Id = 4,
+                Title = "Homework04",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.Done,
+                Type = Type.Work
+            };
+
+            Task task_05 = new Task()
+            {
+                Id = 5,
+                Title = "Homework05",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.Done,
+                Type = Type.Work
+            };
+
+            Task task_06 = new Task()
+            {
+                Id = 6,
+                Title = "Homework06",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.InProgress,
+                Type = Type.Work
+            };
+
+            Task task_07 = new Task()
+            {
+                Id = 7,
+                Title = "Homework07",
+                Description = "MVC",
+                Priority = Priority.Important,
+                Status = Status.InProgress,
+                Type = Type.Work
+            };
+
+            SubTasks.Add(subtask_05);
+            SubTasks.Add(subtask_06);
+
+            task_03.SubTasks.Add(subtask_05);
+            task_03.SubTasks.Add(subtask_06);
+
+            Tasks.Add(task_01);
+            Tasks.Add(task_02);
+            Tasks.Add(task_03);
+            Tasks.Add(task_04);
+            Tasks.Add(task_05);
+            Tasks.Add(task_06);
+            Tasks.Add(task_07);
+
+            andrea.ToDoTasks.Add(task_01);
+            andrea.ToDoTasks.Add(task_02);
+            andrea.ToDoTasks.Add(task_03);
+            andrea.ToDoTasks.Add(task_04);
+            andrea.ToDoTasks.Add(task_05);
+            andrea.ToDoTasks.Add(task_06);
+            andrea.ToDoTasks.Add(task_07);
 
             UserId = 1;
-            TaskId = 9;
-            SubTaskId = 4;
+            TaskId = 7;
+            SubTaskId = 6;
         }
     }
 }

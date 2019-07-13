@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace ToDoApp.WebApp.Models
 {
-    public class UserViewModel
+    public class UserStatisticViewModel
     {
-        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
         public double AverageFreeTime { get; set; }
-        public List<Task> ToDoTasks { get; set; } = new List<Task>();
+        public List<TaskViewModel> Tasks { get; set; } = new List<TaskViewModel>();
     }
 }

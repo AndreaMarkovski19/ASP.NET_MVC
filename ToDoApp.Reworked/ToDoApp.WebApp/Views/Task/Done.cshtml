@@ -3,7 +3,7 @@
     ViewBag.Title = "Tasks done";
 }
 
-<h1>Tasks DONE are:</h1> <br />
+<h2>Tasks Done are:</h2> <br />
 
 <table border="1" width="300" height="150">
     <thead>
@@ -18,13 +18,14 @@
     <tbody>
         @foreach (var tasks in Model.Done)
         {
-            <tr>
-                <td>@tasks.Title</td>
-                <td>@tasks.Description</td>
-                <td>@tasks.Priority</td>
-                <td>@tasks.Status</td>
-                <td>@tasks.Type</td>
-            </tr>
+        <tr>
+            <td>@tasks.Title</td>
+            <td>@tasks.Description</td>
+            <td>@tasks.Priority</td>
+            <td>@tasks.Status</td>
+            <td>@tasks.Type</td>
+            <td><button>@Html.ActionLink("Click for Details", "TaskDetails", "Task")</button></td>
+        </tr>
         }
     </tbody>
 </table> <br />

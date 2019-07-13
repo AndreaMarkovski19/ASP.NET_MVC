@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ToDoApp.DataAccess.Repositories;
@@ -33,12 +34,7 @@ namespace ToDoApp.Services.Services
         {
             return _taskRepository.GetById(id);
         }
-
-        public int GetTaskCount()
-        {
-            return _taskRepository.GetAll().Count;
-        }
-
+                
         public List<SubTask> GetAllSubTasks()
         {
             return _subTaskRepository.GetAll();
@@ -52,6 +48,11 @@ namespace ToDoApp.Services.Services
         public void CreateNewSubTask(SubTask subTask)
         {
             _subTaskRepository.Insert(subTask);
+        }
+
+        public void UpdateTask(Task task)
+        {
+            _taskRepository.Update(task);
         }
     }
 }

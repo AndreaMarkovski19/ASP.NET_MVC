@@ -35,8 +35,7 @@ namespace ToDoApp.WebApp
 
             // Dependency injection configuration
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<ITaskService, TaskService>();
-            services.AddTransient<IUserTasksService, UserTasksService>();
+            services.AddTransient<ITaskService, TaskService>();            
 
             // Dependency Injection Module
             DIRepositoryModule.RegisterRepositories(services);
@@ -66,7 +65,7 @@ namespace ToDoApp.WebApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Task}/{action=InProgress}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

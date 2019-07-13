@@ -14,12 +14,17 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 1 "C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\Views\_ViewImports.cshtml"
+using ToDoApp.WebApp;
+
+#line default
+#line hidden
+#line 2 "C:\Users\Markovski\Desktop\ToDoApp.Reworked\ToDoApp.WebApp\Views\_ViewImports.cshtml"
 using ToDoApp.WebApp.Models;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e9d5943e5e831cb2beef72666e1e5475c9a129cd", @"/Views/Shared/_ThankYou.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0d2406df676a4c015ea7914ba561ce106837c61b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bda2ee4e533780168272f23c820a26e3e00163e6", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__ThankYou : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

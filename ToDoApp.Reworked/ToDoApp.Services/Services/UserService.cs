@@ -8,7 +8,7 @@ namespace ToDoApp.Services.Services
 {
     public class UserService : IUserService
     {
-        IRepository<User> _userRepository;
+        private IRepository<User> _userRepository;
 
         public UserService(IRepository<User> userRepository)
         {
