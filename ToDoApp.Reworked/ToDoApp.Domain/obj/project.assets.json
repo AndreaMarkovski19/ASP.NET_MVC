@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
       "projectName": "ToDoApp.Domain",
-      "projectPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
+      "projectPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj",
       "packagesPath": "C:\\Users\\Markovski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Domain\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

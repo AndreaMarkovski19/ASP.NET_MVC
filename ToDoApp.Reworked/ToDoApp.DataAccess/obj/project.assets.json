@@ -710,11 +710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.DataAccess\\ToDoApp.DataAccess.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.DataAccess\\ToDoApp.DataAccess.csproj",
       "projectName": "ToDoApp.DataAccess",
-      "projectPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.DataAccess\\ToDoApp.DataAccess.csproj",
+      "projectPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.DataAccess\\ToDoApp.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Markovski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.DataAccess\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
+            "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
+              "projectPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
             }
           }
         }

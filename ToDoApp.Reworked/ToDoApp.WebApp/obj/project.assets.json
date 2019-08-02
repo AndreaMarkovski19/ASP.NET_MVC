@@ -12594,11 +12594,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.WebApp\\ToDoApp.WebApp.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.WebApp\\ToDoApp.WebApp.csproj",
       "projectName": "ToDoApp.WebApp",
-      "projectPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.WebApp\\ToDoApp.WebApp.csproj",
+      "projectPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.WebApp\\ToDoApp.WebApp.csproj",
       "packagesPath": "C:\\Users\\Markovski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.WebApp\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12617,8 +12617,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Services\\ToDoApp.Services.csproj": {
-              "projectPath": "C:\\Users\\Markovski\\Desktop\\ToDoApp.Reworked\\ToDoApp.Services\\ToDoApp.Services.csproj"
+            "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Services\\ToDoApp.Services.csproj": {
+              "projectPath": "D:\\Documents\\GitHub_Repo\\ASP.NET_MVC\\ToDoApp.Reworked\\ToDoApp.Services\\ToDoApp.Services.csproj"
             }
           }
         }
