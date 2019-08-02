@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - AcademyApp</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Welcome", "Home")</li>
+                <li>@Html.ActionLink("All Students", "GetAllStudents", "Home")</li>
+                <li>@Html.ActionLink("Add Students", "AddStudents", "Home")</li>
+            </ul>
+        </nav>
+    </header>
+    <table>
+        @RenderBody()
+    </table>
+    <footer>
+        <p>&copy;AcademyApp</p>
+        <p>All rights reserved</p>
+    </footer>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

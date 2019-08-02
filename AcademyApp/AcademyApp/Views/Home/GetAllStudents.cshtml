@@ -1,0 +1,38 @@
+﻿@model AllStudents
+@{
+    ViewBag.Title = "All Students";
+}
+
+<h1>All students are:</h1> <br />
+
+<table border="1" width="300" height="150">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Academy</th>
+            <th>Projects</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.All_Students.Count; i++)
+        {
+            <tr>
+                <td>@Model.All_Students[i].Id</td>
+                <td>@Model.All_Students[i].FirstName</td>
+                <td>@Model.All_Students[i].LastName</td>
+                <td>@Model.All_Students[i].Age</td>
+                <td>@Model.All_Students[i].Academy</td>
+                <td>
+                    @for (int j = 0; j < Model.All_Students[i].Projects.Count; j++)
+                    {
+                        @Model.All_Students[i].Projects[j].Title
+                        <br />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
