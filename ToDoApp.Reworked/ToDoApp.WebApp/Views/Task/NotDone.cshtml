@@ -1,0 +1,33 @@
+﻿@model NotDoneTasksViewModel
+@{
+    ViewBag.Title = "Tasks not done";
+}
+
+<h2>Tasks Not-Done are:</h2> <br />
+
+<table border="1" width="300" height="150">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tasks in Model.NotDone)
+        {
+        <tr>
+            <td>@tasks.Title</td>
+            <td>@tasks.Description</td>
+            <td>@tasks.Priority</td>
+            <td>@tasks.Status</td>
+            <td>@tasks.Type</td>
+            <td><button>@Html.ActionLink("Click for Details", "TaskDetails", "Task")</button></td>
+        </tr>
+        }
+    </tbody>
+</table> <br />
+
+<button>@Html.ActionLink("Add Task", "AddTask", "Task")</button>
